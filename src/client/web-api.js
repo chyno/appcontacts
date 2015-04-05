@@ -5,10 +5,11 @@ function getId(){
   return ++id;
 }
 
+//test data
 var contacts = [
   {
     id:getId(),
-    firstName:'John',
+    firstName:'Julian',
     lastName:'Tolkien',
     email:'tolkien@inklings.com',
     phoneNumber:'867-5309'
