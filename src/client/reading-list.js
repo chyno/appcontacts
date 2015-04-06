@@ -8,14 +8,14 @@ export class ReadingList {
   constructor(ea, api, http){
      this.api  = api;
      this.api.isRequesting = false;
-     this.readings = [];
+     this.zips = [];
      this.http = http;
   }
   
   created(){
 
-  	return this.http.get('http://localhost:9000/api/readings').then(response => {
-      this.readings = response.content;
+  	return this.http.get('http://localhost:9000/api/zips').then(response => {
+      this.zips = response.content;
     });
 
      

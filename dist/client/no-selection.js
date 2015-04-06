@@ -11,9 +11,9 @@ System.register([], function (_export) {
       NoSelection = _export("NoSelection", function NoSelection() {
         _classCallCheck(this, NoSelection);
 
-        this.message = "Please Select a Contact.";
+        this.message = "Please Select a Zip Code.";
       });
     }
   };
 });
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vLXNlbGVjdGlvbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO3VCQUFhLFdBQVc7Ozs7Ozs7OztBQUFYLGlCQUFXLDBCQUNYLFNBREEsV0FBVyxHQUNUOzhCQURGLFdBQVc7O0FBRXBCLFlBQUksQ0FBQyxPQUFPLEdBQUcsMEJBQTBCLENBQUM7T0FDM0MiLCJmaWxlIjoibm8tc2VsZWN0aW9uLmpzIiwic291cmNlUm9vdCI6Ii9zcmMvIn0=
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vLXNlbGVjdGlvbi5qcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO3VCQUFhLFdBQVc7Ozs7Ozs7OztBQUFYLGlCQUFXLDBCQUNYLFNBREEsV0FBVyxHQUNUOzhCQURGLFdBQVc7O0FBRXBCLFlBQUksQ0FBQyxPQUFPLEdBQUcsMkJBQTJCLENBQUM7T0FDNUMiLCJmaWxlIjoibm8tc2VsZWN0aW9uLmpzIiwic291cmNlUm9vdCI6Ii9zcmMvIn0=
