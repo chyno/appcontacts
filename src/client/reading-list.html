@@ -1,13 +1,14 @@
 <template>
-  <div class="reading-list">
-    <h3>Reading list</h3>
+
+ <div class="reading-list">
     <ul class="list-group">
       <li repeat.for="reading of readings" class="list-group-item ${reading.id === $parent.selectedId ? 'active' : ''}">
-        <a href="#/readings/${reading.id}" click.delegate="$parent.select(reading)">
-          <h4 class="list-group-item-heading">${reading.direction} ${reading.speed}</h4>
+        <a href="#/contacts/${reading.id}" click.delegate="$parent.select(reading)">
+          <h4 class="list-group-item-heading">${reading.speed} ${reading.direction}</h4>
           <p class="list-group-item-text">${reading.gust}</p>
         </a>
       </li>
     </ul>
   </div>
+
 </template>

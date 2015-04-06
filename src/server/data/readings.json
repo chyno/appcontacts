@@ -2,7 +2,7 @@
 	{
 		"id": 1,
 		"direction": "SW",
-		"spped": "15",
+		"speed": "15",
 		"gust": "20",
 		"station": "Thomas Point",
 		"reading":  "2015-04-3T18:25:43.511Z"
@@ -11,9 +11,9 @@
 
 	{
 		"id": 2,
-		"direction": "SW",
-		"spped": "15",
-		"gust": "20",
+		"direction": "N",
+		"speed": "17",
+		"gust": "22",
 		"station": "Thomas Point",
 		"reading": "2015-03-3T18:25:43.511Z"
 
@@ -22,8 +22,8 @@
 	{
 		"id": 3,
 		"direction": "SW",
-		"spped": "15",
-		"gust": "20",
+		"speed": "9",
+		"gust": "11",
 		"station": "Thomas Point",
 		"reading":  "2015-02-3T18:25:43.511Z"
 	

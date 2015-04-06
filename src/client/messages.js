@@ -9,3 +9,15 @@ export class ContactViewed {
     this.contact = contact;
   }
 }
+
+export class ReadingUpdated {
+  constructor(reading){
+    this.reading = reading;
+  }
+}
+
+export class ReadingViewed {
+  constructor(reading){
+    this.reading = reading;
+  }
+}
