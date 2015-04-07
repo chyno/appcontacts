@@ -14,7 +14,7 @@ export class ReadingList {
   
   created(){
 
-  	return this.http.get('http://localhost:9000/api/zips').then(response => {
+  	return this.http.get('/api/zips').then(response => {
       this.zips = response.content;
     });
 
