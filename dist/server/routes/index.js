@@ -8,10 +8,11 @@ module.exports = function(app) {
 
     app.get(api + '/customer/:id', getCustomer);
     app.get(api + '/customers', getCustomers);
-	
+	var request = require('request-promise');
 	app.get(api + '/reading/:id', getReading);
 	app.get(api + '/readings', getReadings);
 	app.get(api + '/zips', getZips);
+	app.get(api + '/zipinfo/:id', getZipInfo);
 //http://www.myweather2.com/developer/weather.ashx?uac=EzHcG2MGR.&uref=68eab41a-a3e3-4055-8c46-951153f40451&temp_unit=f&wind_unit=kph
     var zips = [
       {
@@ -49,6 +50,7 @@ module.exports = function(app) {
 	
 	function getReadings(req, res, next) {
 		
+		
 		var query = new YQL('select * from weather.forecast where (location = 22207)');
  
 		query.exec(function(err, data) {
@@ -65,6 +67,26 @@ module.exports = function(app) {
 
 	function getZips(req, res, next) {
 		res.send(zips);
+	}
+
+	function getZipInfo(req, res, next) {
+	  	
+	  	var zip = '22207';
+		
+		request('http://api.zippopotam.us/us/22207').then( function(err, response, body) {
+		   if (err)
+		   	{
+		   		res.send({error : err});	
+		   }
+		   else
+		   {
+		   	res.send({body : body});	
+ 
+		   }
+		});
+		
+
+
 	}
 };
 //# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiIiwic291cmNlcyI6WyJyb3V0ZXMvaW5kZXguanMiXSwiZmlsZSI6InJvdXRlcy9pbmRleC5qcyIsInNvdXJjZVJvb3QiOiIvc3JjLyJ9

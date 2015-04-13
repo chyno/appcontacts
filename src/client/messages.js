@@ -21,3 +21,9 @@ export class ReadingViewed {
     this.reading = reading;
   }
 }
+
+export class ZipViewed {
+  constructor(zipInfo){
+    this.zipInfo = zipInfo;
+  }
+}
